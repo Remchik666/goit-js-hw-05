@@ -1,4 +1,7 @@
-
+const sortByDescendingFriendCount = (users) => { 
+    const friendsList = users.toSorted((b, a) => a.friends.length - b.friends.length)
+    return friendsList;
+}
 
 
 
@@ -80,4 +83,3 @@ console.log(
   //     gender: "male"
   //   }
   // ]
-  
